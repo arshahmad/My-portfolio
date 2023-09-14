@@ -1,192 +1,359 @@
-import React, {useState} from 'react';
-import "../src/index.css"
+import React, { useState } from "react";
+import "../src/index.css";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
   return (
-      <div className={darkMode ? "dark" : ""}>
-        <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-          <section className=" min-h-screen">
-            <nav className="py-10 mb-12 flex justify-between dark:text-white">
-              <h1 className="text-xl font-burtons">developedByArsh</h1>
-              <ul className="flex items-center">
-                <li>
-                  <BsFillMoonStarsFill
-                      className="cursor-pointer text-2xl"
-                      onClick={() => setDarkMode(!darkMode)}
-                  />
-                </li>
-                <li>
-                  <a
-                      className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                      href="#"
-                  >
-                    Resume
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <div className="text-center p-10">
-              <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-white">
-                Arsh Ahmad
-              </h2>
-              <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
-                Frontend Developer
-              </h3>
-              <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200">
-                Working professionsal providing services for Frontend development
-                and other UI needs. Join me down below and let's get cracking.
+    <div className={darkMode ? "dark" : ""}>
+      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+        <section className=" min-h-screen">
+          <nav className="py-10 mb-12 flex justify-between dark:text-white">
+            <h1 className="text-xl font-burtons">developedByArsh</h1>
+            <ul className="flex items-center">
+              <li>
+                <BsFillMoonStarsFill
+                  className="cursor-pointer text-2xl"
+                  onClick={() => setDarkMode(!darkMode)}
+                />
+              </li>
+              <li>
+                <a
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  href="#"
+                >
+                  Resume
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div className="text-center p-10">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-white">
+              Arsh Ahmad
+            </h2>
+            <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
+              Frontend Developer
+            </h3>
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200">
+              Working professionsal providing services for Frontend development
+              and other UI needs. Join me down below and let's get cracking.
+            </p>
+          </div>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+            <AiFillTwitterCircle />
+            <AiFillLinkedin />
+          </div>
+          <div className="relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 md:w-96 md:h-96 mt-20 mx-auto overflow-hidden">
+            <img src={"/dev-ed-wave.png"} alt="Img" />
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1 dark:text-white">About </h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              Experienced and forward-thinking Software Engineer with over 2
+              years of expertise in a diverse array of front-end
+              technologies,including
+              <span className="text-teal-500">
+                {" "}
+                ReactJS, Angular, NextJS, JavaScript, TypeScript, HTML5, CSS,
+                Redux, Bootstrap, and TailwindCSS.
+              </span>
+              <br />
+              With a robust foundation in web development and an unwavering
+              commitment to staying at the forefront of
+              <span className="text-teal-500"> technology trends </span>, I am
+              deeply committed to delivering innovative solutions and fostering
+              technical excellence within a collaborative team environment. My
+              track record extends beyond developing meticulously well-tested
+              software solutions
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              I also take pride in mentoring junior developers, helping them
+              realize their full potential, all while maintaining a cohesive and
+              high-performing team dynamic.
+            </p>{" "}
+          </div>
+        </section>
+        <section className="py-10">
+          <div>
+            <h3 className="text-3xl py-1 dark:text-white ">Projects</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              Since the beginning of my journey as a software development
+              engineer, I've done work for
+              <span className="text-teal-500"> devslane </span>
+              and collaborated with talanted people to create digital products
+              for both business and consumer use.
+            </p>
+            <br />
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              NOTE: "Most of my projects are on{" "}
+              <b className="text-teal-500">React.js</b> but could not display
+              those here due to privacy policy"
+            </p>
+          </div>
+          <div className="lg:flex gap-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+              <img src={"/design.png"} width={100} height={100} alt="img" />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">BusinessOnBot</h3>
+              <p className="py-2">
+                Developed a comprehensive project demonstrating CRUD operations
+                in Angular, seamlessly integrating with APIs, and efficiently
+                utilizing the Redux store.
               </p>
+              <h4 className="py-4 text-teal-600">Technologies I Used</h4>
+              <p className="text-gray-800 py-1">Angular</p>
+              <p className="text-gray-800 py-1">Typescript</p>
+              <p className="text-gray-800 py-1">Redux</p>
+              <p className="text-gray-800 py-1">Html/Css</p>
             </div>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
-              <AiFillLinkedin />
-            </div>
-            <div className="relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 md:w-96 md:h-96 mt-20 mx-auto overflow-hidden">
-              <img src={"/dev-ed-wave.png"} alt="Img"/>
-            </div>
-          </section>
-          <section>
-            <div>
-              <h3 className="text-3xl py-1 dark:text-white">Services I offer </h3>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                Since the beginning of my journey as a freelance designer and
-                developer, I've done remote work for
-                <span className="text-teal-500"> agencies </span>
-                consulted for <span className="text-teal-500">startups </span>
-                and collaborated with talanted people to create digital products
-                for both business and consumer use.
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+              <img src={"/code.png"} width={100} height={100} alt="img" />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">PWA</h3>
+              <p className="py-2">
+                Designed and developed a Progressive Web Application in Angular,
+                implementing advanced concepts of service workers to enhance
+                performance and user experience.
               </p>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                I offer from a wide range of services, including brand design,
-                programming and teaching.
-              </p>{" "}
+              <h4 className="py-4 text-teal-600">Technologies I Used</h4>
+              <p className="text-gray-800 py-1">Angular</p>
+              <p className="text-gray-800 py-1">Typescript</p>
+              <p className="text-gray-800 py-1">Html/Css</p>
             </div>
-            <div className="lg:flex gap-10">
-              <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-                <img src={"/design.png"} width={100} height={100} alt="img" />
-                <h3 className="text-lg font-medium pt-8 pb-2  ">
-                  Beautiful Designs
-                </h3>
-                <p className="py-2">
-                  Creating elegant designs suited for your needs following core
-                  design theory.
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+              <img src={"/consulting.png"} width={100} height={100} alt="img" />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">Blog out</h3>
+              <p className="py-2">
+                Developed a minimalist blog website by leveraging Redwood JS and
+                GraphQL technologies,.
+              </p>
+              <h4 className="py-4 text-teal-600">Technologies I Used</h4>
+              <p className="text-gray-800 py-1">Redwood JS</p>
+              <p className="text-gray-800 py-1">Typescript</p>
+              <p className="text-gray-800 py-1">Html/Css</p>
+            </div>
+          </div>
+          {/* <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/3 flex-1 ">
+              <img
+                className="rounded-lg object-cover"
+                src={"/web1.png"}
+                width={"100"}
+                height={"100"}
+                alt="img"
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <img
+                className="rounded-lg object-cover"
+                width={"100"}
+                height={"100"}
+                alt="img"
+                src={"/web2.png"}
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <img
+                className="rounded-lg object-cover"
+                width={"100"}
+                height={"100"}
+                alt="img"
+                src={"/web3.png"}
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <img
+                className="rounded-lg object-cover"
+                width={"100"}
+                height={"100"}
+                alt="img"
+                src={"/web4.png"}
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <img
+                className="rounded-lg object-cover"
+                width={"100"}
+                height={"100"}
+                alt="img"
+                src={"/web5.png"}
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <img
+                className="rounded-lg object-cover"
+                width={"100"}
+                height={"100"}
+                alt="img"
+                src={"/web6.png"}
+              />
+            </div>
+          </div> */}
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1 dark:text-white">Skills </h3>
+            <div className="py-6 px-8 rounded-lg">
+              <div className="grid grid-cols-3 gap-4">
+                <div className="list-divide divide-teal-600 divide-y-2 text-teal-600">
+                  <h2 className="text-xl font-semibold mb-4">Frontend:</h2>
+                  <ul className="list-disc list-inside dark:text-white">
+                    <li>ReactJs</li>
+                    <li>NextJs</li>
+                    <li>Angular</li>
+                    <li>Javascript</li>
+                    <li>Typescript</li>
+                    <li>Redux</li>
+                    <li>Akita</li>
+                    <li>HTML</li>
+                    <li>CSS/SASS</li>
+                    <li>Tailwind</li>
+                    <li>Angular Material / MaterialUI</li>
+                  </ul>
+                </div>
+                <div className="list-divide divide-teal-600 divide-y-2 text-teal-600">
+                  <h2 className="text-xl font-semibold mb-4">
+                    Project Management:
+                  </h2>
+                  <ul className="list-disc list-inside dark:text-white">
+                    <li>JIRA</li>
+                    <li>Agile</li>
+                    <li>UI</li>
+                    <li>Systems Analysis</li>
+                    <li>Decision Making</li>
+                    <li>Test</li>
+                  </ul>
+                </div>
+                <div className="list-divide divide-teal-600 divide-y-2 text-teal-600">
+                  <h2 className="text-xl font-semibold mb-4">Other:</h2>
+                  <ul className="list-disc list-inside dark:text-white">
+                    <li>REST API</li>
+                    <li>JEST</li>
+                    <li>Problem Solving</li>
+                    <li>Postman</li>
+                    <li>Git</li>
+                    <li>Github/Bitbucket</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-8 dark:text-white">Work experience </h3>
+            <div className="p-6 rounded-lg text-white shadow-lg">
+              <div className="mb-6">
+                <p className="text-lg font-semibold text-teal-600">
+                  Software Engineer - Devslane
                 </p>
-                <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-                <p className="text-gray-800 py-1">Photoshop</p>
-                <p className="text-gray-800 py-1">Illustrator</p>
-                <p className="text-gray-800 py-1">Figma</p>
-                <p className="text-gray-800 py-1">Indesign</p>
-              </div>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-                <img src={"/code.png"} width={100} height={100} alt="img" />
-                <h3 className="text-lg font-medium pt-8 pb-2 ">
-                  Code your dream project
-                </h3>
-                <p className="py-2">
-                  Do you have an idea for your next great website? Let's make it a
-                  reality.
+                <p className="text-md text-teal-600 py-2 leading-8 ">
+                  July 2021 - Present
                 </p>
-                <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-                <p className="text-gray-800 py-1">Photoshop</p>
-                <p className="text-gray-800 py-1">Illustrator</p>
-                <p className="text-gray-800 py-1">Figma</p>
-                <p className="text-gray-800 py-1">Indesign</p>
               </div>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-                <img src={"/consulting.png"} width={100} height={100} alt="img" />
-                <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
-                <p className="py-2">
-                  Are you interested in feedback for your current project? I can
-                  give you tips and tricks to level it up.
+              <div className="mb-4">
+                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
+                  2+ years of hands-on experience in{" "}
+                  <span className="text-teal-600">
+                    ReactJS, Angular, NextJS, JavaScript, TypeScript, HTML5,
+                    CSS, Redux, Bootstrap, and TailwindCSS
+                  </span>
+                  .
                 </p>
-                <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-                <p className="text-gray-800 py-1">Photoshop</p>
-                <p className="text-gray-800 py-1">Illustrator</p>
-                <p className="text-gray-800 py-1">Figma</p>
-                <p className="text-gray-800 py-1">Indesign</p>
+                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
+                  Proficiency in{" "}
+                  <span className="text-teal-600">
+                    JavaScript MVC, SASS/Less, and DOM manipulation
+                  </span>
+                  .
+                </p>
+                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
+                  Solid experience with popular React.js workflows (redux-saga).
+                </p>
+                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
+                  Expertise in UI Build Frameworks{" "}
+                  <span className="text-teal-600">(NPM)</span> and JS Testing
+                  Frameworks.
+                </p>
+                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
+                  Known for engineering cross-browser and cross-device compliant
+                  code for user interface development.
+                </p>
+                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
+                  Familiarity with newer specifications of{" "}
+                  <span className="text-teal-600">EcmaScript</span>.
+                </p>
+              </div>
+              <div className="mb-4">
+                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
+                  Proficient in analyzing and reviewing project requirements and
+                  delivering design documents within schedule.
+                </p>
+                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
+                  Demonstrated ability in developing, modifying, and reviewing
+                  code, ensuring alignment with design specifications.
+                </p>
+                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
+                  Experienced in crafting unit test plans, test cases, and test
+                  data, and conducting thorough unit testing while meticulously
+                  documenting results.
+                </p>
+                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
+                  Provided invaluable support for testing efforts, ensuring the
+                  quality of deliverables.
+                </p>
+                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
+                  Cultivated a congenial work environment and actively engaged
+                  in technical mentoring.
+                </p>
+                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
+                  Made significant contributions to knowledge management
+                  initiatives.
+                </p>
               </div>
             </div>
-          </section>
-          <section className="py-10">
-            <div>
-              <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                Since the beginning of my journey as a freelance designer and
-                developer, I've done remote work for
-                <span className="text-teal-500"> agencies </span>
-                consulted for <span className="text-teal-500">startups </span>
-                and collaborated with talanted people to create digital products
-                for both business and consumer use.
-              </p>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                I offer from a wide range of services, including brand design,
-                programming and teaching.
-              </p>
-            </div>
-            <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-              <div className="basis-1/3 flex-1 ">
-                <img
-                    className="rounded-lg object-cover"
-                    src={"/web1.png"}
-                    width={"100"}
-                    height={"100"}
-                    alt="img"
-                />
+            <div className="p-6 rounded-lg text-white shadow-lg">
+              <div className="mb-6">
+                <p className="text-lg font-semibold text-teal-600">
+                  Frontend Engineer Intern - Devslane
+                </p>
+                <p className="text-md text-teal-600 py-2 leading-8 ">
+                  Feb 2019 - July 2021
+                </p>
               </div>
-              <div className="basis-1/3 flex-1">
-                <img
-                    className="rounded-lg object-cover"
-                    width={"100"}
-                    height={"100"}
-                    alt="img"
-                    src={"/web2.png"}
-                />
-              </div>
-              <div className="basis-1/3 flex-1">
-                <img
-                    className="rounded-lg object-cover"
-                    width={"100"}
-                    height={"100"}
-                    alt="img"
-                    src={"/web3.png"}
-                />
-              </div>
-              <div className="basis-1/3 flex-1">
-                <img
-                    className="rounded-lg object-cover"
-                    width={"100"}
-                    height={"100"}
-                    alt="img"
-                    src={"/web4.png"}
-                />
-              </div>
-              <div className="basis-1/3 flex-1">
-                <img
-                    className="rounded-lg object-cover"
-                    width={"100"}
-                    height={"100"}
-                    alt="img"
-                    src={"/web5.png"}
-                />
-              </div>
-              <div className="basis-1/3 flex-1">
-                <img
-                    className="rounded-lg object-cover"
-                    width={"100"}
-                    height={"100"}
-                    alt="img"
-                    src={"/web6.png"}
-                />
+              <div className="mb-4">
+                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
+                  Played a key role in building E2E frontend applications.
+                </p>
+                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
+                  Integrated multiple APIs and third-party APIs in frontend
+                  applications .
+                </p>
+                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
+                  Made UI that matched to the given mockups exactly{" "}
+                </p>
+                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
+                  Worked on an Erosion control system, which records multiple
+                  type of inspections and made the application PWA using service
+                  workers.
+                </p>
+                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
+                  Worked on ERP project of the company, added features such as
+                  adding removing and updating of employed, projects etc.
+                </p>
+                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
+                  Familiarity with newer specifications of{" "}
+                  <span className="text-teal-600">EcmaScript</span>.
+                </p>
               </div>
             </div>
-          </section>
-        </main>
-      </div>
+          </div>
+        </section>
+      </main>
+    </div>
   );
 }
 
