@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../src/index.css";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
-import logo from "./logo.svg";
+import { AiFillLinkedin } from "react-icons/ai";
+import { RiTwitterXFill } from "react-icons/ri";
 import "./App.css";
 import Typist from "react-typist-component";
 
@@ -72,13 +72,13 @@ function App() {
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
             <AiFillLinkedin
-              className="cursor-pointer"
+              className="cursor-pointer hover:text-[#0A66C2] "
               onClick={() =>
                 navigate("https://www.linkedin.com/in/btwitsarsh/")
               }
             />
-            <AiFillTwitterCircle
-              className="cursor-pointer"
+            <RiTwitterXFill
+              className="cursor-pointer hover:text-[#000000] "
               onClick={() => navigate("https://twitter.com/btw_itsarsh")}
             />
           </div>
