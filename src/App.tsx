@@ -24,7 +24,7 @@ function App() {
   };
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div className={darkMode ? "dark" : ""} data-cursor-color="#61dbfb">
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
@@ -132,7 +132,7 @@ function App() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+            <div data-cursor-magnetic className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <img src={"/design.png"} width={100} height={100} alt="img" />
               <h3 className="text-lg font-medium pt-8 pb-2  ">BusinessOnBot</h3>
               <p className="py-2">
@@ -146,7 +146,7 @@ function App() {
               <p className="text-gray-800 py-1">Redux</p>
               <p className="text-gray-800 py-1">Html/Css</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div data-cursor-magnetic className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <img src={"/code.png"} width={100} height={100} alt="img" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">PWA</h3>
               <p className="py-2">
@@ -159,7 +159,7 @@ function App() {
               <p className="text-gray-800 py-1">Typescript</p>
               <p className="text-gray-800 py-1">Html/Css</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div data-cursor-magnetic className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <img src={"/consulting.png"} width={100} height={100} alt="img" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">Blog out</h3>
               <p className="py-2">
@@ -296,7 +296,7 @@ function App() {
                 </p>
               </div>
             </div>
-            <div className="p-6 rounded-lg text-white shadow-lg">
+            {/* <div className="p-6 rounded-lg text-white shadow-lg">
               <div className="mb-6">
                 <p className="text-lg font-semibold text-teal-600">
                   Frontend Engineer Intern - Devslane
@@ -325,12 +325,8 @@ function App() {
                   Worked on ERP project of the company, added features such as
                   adding removing and updating of employed, projects etc.
                 </p>
-                <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
-                  Familiarity with newer specifications of{" "}
-                  <span className="text-teal-600">EcmaScript</span>.
-                </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
       </main>
