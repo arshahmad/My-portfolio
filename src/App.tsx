@@ -6,7 +6,7 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [darkMode, setDarkMode] = useState<boolean>(true);
 
   const downloadPdf = () => {
     const link = document.createElement("a");
