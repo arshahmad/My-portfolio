@@ -7,6 +7,21 @@ import "./App.css";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
+
+  const downloadPdf = () => {
+    const link = document.createElement("a");
+
+    link.href = "/Arsh_resume.pdf";
+
+    link.download = "Arsh_resume.pdf";
+
+    link.click();
+  };
+
+  const navigate = (link: string) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
@@ -22,8 +37,8 @@ function App() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 cursor-pointer"
+                  onClick={downloadPdf}
                 >
                   Resume
                 </a>
@@ -38,13 +53,31 @@ function App() {
               Frontend Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200">
-              Working professionsal providing services for Frontend development
-              and other UI needs. Join me down below and let's get cracking.
+              Working professional providing services for Frontend development
+              and other UI needs. I have completed my bachelor's degree in
+              <span className="text-teal-600">
+                {" "}
+                Information Technology
+              </span>{" "}
+              from{" "}
+              <span className="text-teal-600 ">
+                Dr. A.P.J. Abdul Kalam Technical University
+              </span>{" "}
+              with a <span className="text-teal-600">CGPA of 8.3.</span> Join me
+              down below, and let's get cracking.
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-            <AiFillTwitterCircle />
-            <AiFillLinkedin />
+            <AiFillLinkedin
+              className="cursor-pointer"
+              onClick={() =>
+                navigate("https://www.linkedin.com/in/btwitsarsh/")
+              }
+            />
+            <AiFillTwitterCircle
+              className="cursor-pointer"
+              onClick={() => navigate("https://twitter.com/btw_itsarsh")}
+            />
           </div>
           <div className="relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 md:w-96 md:h-96 mt-20 mx-auto overflow-hidden">
             <img src={"/dev-ed-wave.png"} alt="Img" />
