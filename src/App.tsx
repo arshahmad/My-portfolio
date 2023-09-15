@@ -4,6 +4,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
 import logo from "./logo.svg";
 import "./App.css";
+import Typist from "react-typist-component";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
@@ -52,20 +53,22 @@ function App() {
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
               Frontend Developer
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200">
-              Working professional providing services for Frontend development
-              and other UI needs. I have completed my bachelor's degree in
-              <span className="text-teal-600">
-                {" "}
-                Information Technology
-              </span>{" "}
-              from{" "}
-              <span className="text-teal-600 ">
-                Dr. A.P.J. Abdul Kalam Technical University
-              </span>{" "}
-              with a <span className="text-teal-600">CGPA of 8.3.</span> Join me
-              down below, and let's get cracking.
-            </p>
+            <div>
+              <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-2xl mx-auto dark:text-gray-200">
+                <Typist>
+                  Working professional providing services for Frontend
+                  development and other UI needs. I have completed my bachelor's
+                  degree in{" "}
+                  <span className="text-teal-600">Information Technology</span>{" "}
+                  from{" "}
+                  <span className="text-teal-600">
+                    Dr. A.P.J. Abdul Kalam Technical University
+                  </span>{" "}
+                  with a <span className="text-teal-600">CGPA of 8.3.</span>{" "}
+                  Join me down below, and let's get cracking.
+                </Typist>
+              </p>
+            </div>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
             <AiFillLinkedin
@@ -169,62 +172,6 @@ function App() {
               <p className="text-gray-800 py-1">Html/Css</p>
             </div>
           </div>
-          {/* <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <img
-                className="rounded-lg object-cover"
-                src={"/web1.png"}
-                width={"100"}
-                height={"100"}
-                alt="img"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <img
-                className="rounded-lg object-cover"
-                width={"100"}
-                height={"100"}
-                alt="img"
-                src={"/web2.png"}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <img
-                className="rounded-lg object-cover"
-                width={"100"}
-                height={"100"}
-                alt="img"
-                src={"/web3.png"}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <img
-                className="rounded-lg object-cover"
-                width={"100"}
-                height={"100"}
-                alt="img"
-                src={"/web4.png"}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <img
-                className="rounded-lg object-cover"
-                width={"100"}
-                height={"100"}
-                alt="img"
-                src={"/web5.png"}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <img
-                className="rounded-lg object-cover"
-                width={"100"}
-                height={"100"}
-                alt="img"
-                src={"/web6.png"}
-              />
-            </div>
-          </div> */}
         </section>
         <section>
           <div>
