@@ -228,9 +228,9 @@ function App() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Skills </h3>
+            <h3 className="text-3xl py-1 dark:text-white">Skills</h3>
             <div className="py-6 px-8 rounded-lg">
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div className="list-divide divide-teal-600 divide-y-2 text-teal-600">
                   <h2 className="text-xl font-semibold mb-4">Frontend:</h2>
                   <ul className="list-disc list-inside dark:text-white">
@@ -275,6 +275,7 @@ function App() {
             </div>
           </div>
         </section>
+
         <section>
           <div>
             <h3 className="text-3xl py-8 dark:text-white">Work experience </h3>
