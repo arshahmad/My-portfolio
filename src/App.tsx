@@ -90,7 +90,7 @@ function App() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white">About </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Experienced and forward-thinking Software Engineer with over 2
+              Experienced and forward-thinking Software Engineer with over 2.5
               years of expertise in a diverse array of front-end
               technologies,including
               <span className="text-teal-500">
@@ -192,6 +192,7 @@ function App() {
                     <li>CSS/SASS</li>
                     <li>Tailwind</li>
                     <li>Angular Material / MaterialUI</li>
+                    <li>MySql</li>
                   </ul>
                 </div>
                 <div className="list-divide divide-teal-600 divide-y-2 text-teal-600">
