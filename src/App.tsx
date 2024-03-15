@@ -83,7 +83,7 @@ function App() {
             />
           </div>
           <div className="relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 md:w-96 md:h-96 mt-20 mx-auto overflow-hidden">
-            <img src={"/dev-ed-wave.png"} alt="Img" />
+            <img className="object-cover w-full h-full" src={"/profile-transparent.png"} alt="Img" />
           </div>
         </section>
         <section>
@@ -179,7 +179,7 @@ function App() {
             <div className="py-6 px-8 rounded-lg">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div className="list-divide divide-teal-600 divide-y-2 text-teal-600">
-                  <h2 className="text-xl font-semibold mb-4">Frontend:</h2>
+                  <h2 className="text-xl font-semibold mb-4">Technologies:</h2>
                   <ul className="list-disc list-inside dark:text-white">
                     <li>ReactJs</li>
                     <li>NextJs</li>
@@ -192,7 +192,7 @@ function App() {
                     <li>CSS/SASS</li>
                     <li>Tailwind</li>
                     <li>Angular Material / MaterialUI</li>
-                    <li>MySql</li>
+                    <li>MySql (Basic)</li>
                   </ul>
                 </div>
                 <div className="list-divide divide-teal-600 divide-y-2 text-teal-600">
@@ -238,7 +238,7 @@ function App() {
               </div>
               <div className="mb-4">
                 <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
-                  2+ years of hands-on experience in{" "}
+                  2.5+ years of hands-on experience in{" "}
                   <span className="text-teal-600">
                     ReactJS, Angular, NextJS, JavaScript, TypeScript, HTML5,
                     CSS, Redux, Bootstrap, and TailwindCSS
