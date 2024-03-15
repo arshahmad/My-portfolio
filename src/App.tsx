@@ -5,6 +5,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { RiTwitterXFill } from "react-icons/ri";
 import "./App.css";
 import Typist from "react-typist-component";
+import { Tilt } from "react-tilt";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true);
@@ -21,6 +22,17 @@ function App() {
 
   const navigate = (link: string) => {
     window.open(link, "_blank");
+  };
+  const defaultOptions = {
+    reverse: false, // reverse the tilt direction
+    max: 35, // max tilt rotation (degrees)
+    perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
+    scale: 1.1, // 2 = 200%, 1.5 = 150%, etc..
+    speed: 1000, // Speed of the enter/exit transition
+    transition: true, // Set a transition on enter/exit.
+    axis: null, // What axis should be disabled. Can be X or Y.
+    reset: true, // If the tilt effect has to be reset on exit.
+    easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
   };
 
   return (
@@ -82,9 +94,16 @@ function App() {
               onClick={() => navigate("https://twitter.com/btw_itsarsh")}
             />
           </div>
-          <div className="relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 md:w-96 md:h-96 mt-20 mx-auto overflow-hidden">
-            <img className="object-cover w-full h-full" src={"/profile-transparent.png"} alt="Img" />
-          </div>
+          <Tilt
+            options={defaultOptions}
+            className="relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 md:w-96 md:h-96 mt-20 mx-auto overflow-hidden"
+          >
+            <img
+              className="object-cover w-full h-full"
+              src={"/profile-transparent.png"}
+              alt="Img"
+            />
+          </Tilt>
         </section>
         <section>
           <div>
@@ -132,7 +151,11 @@ function App() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div data-cursor-magnetic className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+            <Tilt
+              options={defaultOptions}
+              data-cursor-magnetic
+              className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1"
+            >
               <img src={"/design.png"} width={100} height={100} alt="img" />
               <h3 className="text-lg font-medium pt-8 pb-2  ">BusinessOnBot</h3>
               <p className="py-2">
@@ -145,8 +168,12 @@ function App() {
               <p className="text-gray-800 py-1">Typescript</p>
               <p className="text-gray-800 py-1">Redux</p>
               <p className="text-gray-800 py-1">Html/Css</p>
-            </div>
-            <div data-cursor-magnetic className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            </Tilt>
+            <Tilt
+              options={defaultOptions}
+              data-cursor-magnetic
+              className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1"
+            >
               <img src={"/code.png"} width={100} height={100} alt="img" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">PWA</h3>
               <p className="py-2">
@@ -158,8 +185,12 @@ function App() {
               <p className="text-gray-800 py-1">Angular</p>
               <p className="text-gray-800 py-1">Typescript</p>
               <p className="text-gray-800 py-1">Html/Css</p>
-            </div>
-            <div data-cursor-magnetic className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            </Tilt>
+            <Tilt
+              options={defaultOptions}
+              data-cursor-magnetic
+              className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1"
+            >
               <img src={"/consulting.png"} width={100} height={100} alt="img" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">Blog out</h3>
               <p className="py-2">
@@ -170,7 +201,7 @@ function App() {
               <p className="text-gray-800 py-1">Redwood JS</p>
               <p className="text-gray-800 py-1">Typescript</p>
               <p className="text-gray-800 py-1">Html/Css</p>
-            </div>
+            </Tilt>
           </div>
         </section>
         <section>
