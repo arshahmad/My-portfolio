@@ -63,7 +63,7 @@ function App() {
               Arsh Ahmad
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
-              Frontend Developer
+              Software Engineer
             </h3>
             <div>
               <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-2xl mx-auto dark:text-gray-200">
@@ -269,7 +269,7 @@ function App() {
               </div>
               <div className="mb-4">
                 <p className="text-md leading-8 text-gray-800 dark:text-gray-200">
-                  2.5+ years of hands-on experience in{" "}
+                  3.5+ years of hands-on experience in{" "}
                   <span className="text-teal-600">
                     ReactJS, Angular, NextJS, JavaScript, TypeScript, HTML5,
                     CSS, Redux, Bootstrap, and TailwindCSS
