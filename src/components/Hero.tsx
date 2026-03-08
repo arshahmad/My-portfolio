@@ -50,7 +50,7 @@ const Hero = () => {
         </h1>
 
         <h2 className="hero-enter hero-delay-2 text-xl md:text-2xl text-gray-600 dark:text-gray-400 mt-3 font-medium tracking-wide">
-          Frontend Engineer
+          Software Engineer
         </h2>
 
         <div className="hero-enter hero-delay-3 max-w-2xl mx-auto mt-6 px-4">
