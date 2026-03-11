@@ -70,7 +70,7 @@ const About = () => {
       <ScrollReveal delay={100}>
         <div className="max-w-4xl">
           <p className="text-md md:text-lg leading-8 text-gray-700 dark:text-gray-300">
-            Frontend Engineer with{" "}
+            Software Engineer with{" "}
             <span className="text-teal-500 font-medium">
               5+ years of experience
             </span>{" "}
